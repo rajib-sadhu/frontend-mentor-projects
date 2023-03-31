@@ -1,22 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-  <script src="https://cdn.tailwindcss.com"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <script src="https://cdn.tailwindcss.com"></script><!--Tailwind link-->
+  <link rel="stylesheet" href="./Style/style.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
+
   <title>Frontend Mentor | Results summary component</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
   </style>
 </head>
+
 <body>
 
 
+  <main class="min-h-screen mb-10">
+    <section class="w-full md:h-screen flex justify-center items-center">
+      <div class="grid md:grid-cols-2 grid-cols-1 w-[38rem] h-[26rem] shadow-2xl md:rounded-3xl">
+
+        <div
+          class="bg-gradient-to-t from-[#2e2be9] to-[#7857ff]  text-center md:rounded-3xl rounded-b-3xl flex items-center flex-col p-4">
+
+          <h1 class="text-xl py-2 text-white">Your Result</h1>
+          <div>
+            <div
+              class="bg-gradient-to-t from-[#4d3df2] to-[#4e21ca] text-white w-40 h-40 rounded-[50%] flex items-center justify-center mt-5">
+              <div>
+                <h4 class="text-5xl font-bold mb-1">76</h4>
+                <p class="text-[12px] text-[#c8c7ff] font-medium">of 100</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="px-5 mt-5">
+            <h4 class="text-2xl text-white font-semibold mb-1">Great</h4>
+            <p class="text-[#ebf1ff] font-light">You scored higher than 65% of the people who have taken these tests.
+            </p>
+          </div>
+        </div>
+
+        <div class="p-5">
+          <h1 class="text-xl font-bold pb-5 pt-1 ps-0">Summary</h1>
+          <ul class="font-semibold space-y-4">
+            <li class="flex justify-between p-3 bg-slate-200 rounded-lg">
+              <div class="flex items-center gap-2">
+                <img src="./assets/images/icon-reaction.svg" alt="">
+                <h1 class="text-[#ff5757]">Reaction</h1>
+              </div>
+              <div class="flex">
+                <h1 class=""> 80 <span class="font-normal">/ 100</span></h1>
+              </div>
+            </li>
+
+            <li class="flex justify-between p-3 bg-slate-200 rounded-lg">
+              <div class="flex items-center gap-2">
+                <img src="./assets/images/icon-memory.svg" alt="">
+                <h1 class="text-[#ffb01f]">Memory</h1>
+              </div>
+              <div class="flex">
+                <h1 class=""> 92 <span class="font-normal">/ 100</span></h1>
+              </div>
+            </li>
+
+            <li class="flex justify-between p-3 bg-slate-200 rounded-lg">
+              <div class="flex items-center gap-2">
+                <img src="./assets/images/icon-verbal.svg" alt="">
+                <h1 class="text-[#00bd91]">Verbal</h1>
+              </div>
+              <div class="flex">
+                <h1 class=""> 31 <span class="font-normal">/ 100</span></h1>
+              </div>
+            </li>
+
+            <li class="flex justify-between p-3 bg-slate-200 rounded-lg">
+              <div class="flex items-center gap-2">
+                <img src="./assets/images/icon-visual.svg" alt="">
+                <h1 class="text-[#1125d4]">Visual</h1>
+              </div>
+              <div class="flex">
+                <h1 class=""> 72 <span class="font-normal">/ 100</span></h1>
+              </div>
+            </li>
+
+          </ul>
+          <div class="p-5 mt-2">
+            <button class="w-full text-white bg-[#303b5a] hover:bg-[#4d3df2] py-2 rounded-3xl text-sm">Continue</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
 
 
 
@@ -42,10 +128,12 @@
   72 / 100
 
   Continue -->
-  
+
+  <script src="./JS/app.js"></script>
   <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="#">Your Name Here</a>.
   </div>
 </body>
+
 </html>
