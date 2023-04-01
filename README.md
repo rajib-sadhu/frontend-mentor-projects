@@ -2,6 +2,10 @@
 
 ![Design preview for the News homepage coding challenge](./design/desktop-preview.jpg)
 
+## Live link
+
+[https://rs-news-homepage.netlify.app/](https://rs-news-homepage.netlify.app/)
+
 ## Welcome! 👋
 
 Thanks for checking out this front-end coding challenge.
